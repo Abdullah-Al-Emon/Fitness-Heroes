@@ -12,3 +12,13 @@
     margin-left: 55px;
     margin-right: 45px;
 }
+@media screen and (max-width: 768px){
+    .cart-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 600px){
+    .cart-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
