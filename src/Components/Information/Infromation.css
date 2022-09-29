@@ -1,0 +1,10 @@
+.info{
+    margin: 30px 20px;
+    display: flex;
+    align-items: center;
+}
+.info img{
+    width: 50px;
+    height: 55px;
+    border-radius: 30px;
+}

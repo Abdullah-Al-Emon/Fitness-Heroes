@@ -1,0 +1,50 @@
+[
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "body": "Lorem quisquam provident laborum eaque perspiciatis saepe et quos odio ducimus",
+    "name": "Lat Pulldown Machine",
+    "age": "20-25",
+    "time": 30,
+    "img": "https://media.istockphoto.com/photos/work-out-on-pulldown-weight-machine-picture-id1311512621?b=1&k=20&m=1311512621&s=170667a&w=0&h=bPphBYHT1C2rqMLrWUd62-Spw5vQyEMLxHILfMMSmJg="
+  },
+  {
+    "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+    "body": "Lorem quisquam provident laborum eaque perspiciatis saepe et quos odio ducimus",
+    "name": "Kettlebells",
+    "age": "20-25",
+    "time": 30,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ52qBU3u5t4OpRlLmFZJtkVlsBScrtmiJ0Tz7aES5-yBxnTYBwj5wV0OldDdUbyQ02_pk&usqp=CAU"
+  },
+  {
+    "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+    "body": "Lorem quisquam provident laborum eaque perspiciatis saepe et quos odio ducimus",
+    "name": "Hip Abduction Machine",
+    "age": "20-25",
+    "time": 30,
+    "img": "https://www.greatestphysiques.com/wp-content/uploads/2018/02/Chest-fly-machine.jpg"
+  },
+  {
+    "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+    "body": "Lorem quisquam provident laborum eaque perspiciatis saepe et quos odio ducimus",
+    "name": "Hammer Strength",
+    "age": "20-25",
+    "time": 30,
+    "img": "https://prod-everyoneactive-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2020/10/05170414/full-body-gym-workout-cropped.jpg"
+  },
+  {
+    "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
+    "body": "Lorem quisquam provident laborum eaque perspiciatis saepe et quos odio ducimus",
+    "name": "Chest Press Machine",
+    "age": "20-25",
+    "time": 30,
+    "img": "https://t3.ftcdn.net/jpg/03/29/60/84/360_F_329608479_vP9nFK795X8lWmoTa8DPhMgoewQ7U1lG.jpg"
+  },
+  {
+    "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
+    "body": "Lorem quisquam provident laborum eaque perspiciatis saepe et quos odio ducimus",
+    "name": "Dumble",
+    "age": "20-25",
+    "time": 30,
+    "img": "https://media.istockphoto.com/photos/dumbbells-and-kettlebells-on-a-floor-bodybuilding-equipment-fitness-picture-id1307360297?b=1&k=20&m=1307360297&s=612x612&w=0&h=1D5xckmKxvk_1sEss0FLAdLgA6Xo8y7iQLYaYq64nTs="
+  }
+]

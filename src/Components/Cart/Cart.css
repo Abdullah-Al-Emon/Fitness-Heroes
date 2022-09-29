@@ -1,0 +1,39 @@
+.cart{
+    width: 275px;
+    height: 390px;
+    border-radius: 8px;
+    position: relative;
+    background-color: #FFFFFF;
+}
+.cart img {
+    width: 256px;
+    height: 126px;
+    border-radius: 8px;
+    margin: 7px;
+}
+
+.cart-info{
+    margin: 0px 13px;
+}
+
+.cart-info p{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.cart-name {
+    font-style: normal;
+    font-weight: 640;
+    font-size: 21px;
+    line-height: 25px;
+    color: #0E161A;
+    margin-top: 7px;
+}
+
+.btn-cart{
+    padding: 8px 50px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin-left: 37px;
+    margin-top: 10px;
+}
