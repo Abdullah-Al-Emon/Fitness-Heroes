@@ -3,7 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import './Infromation.css';
 
-const Information = () => {
+const Information = ({info}) => {
+    let time = 0;
+    for( const cart of info){
+        time = time + cart.time;
+    }
+    console.log(time)
     return (
         <div>
             <div className='info'>
@@ -61,7 +66,7 @@ const Information = () => {
                         <p className='text-[17px] font-[600]'>Break time</p>
                     </div>
                     <div>
-                        <p className='font-[400] text-zinc-500'>0s</p>
+                        <p className='font-[400] text-zinc-500'>{time}s</p>
                     </div>
                 </div>
             </div>
