@@ -23,8 +23,7 @@ const Information = ({ info }) => {
 
     let time = 0;
     for (const cart of info) {    
-
-        time = parseFloat(cart.time) + time;
+        time = cart.time + time;
     }
 
     const notify = () => {

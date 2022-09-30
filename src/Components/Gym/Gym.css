@@ -3,10 +3,6 @@
     grid-template-columns: 3fr 1fr;
     /* margin: 0px 10px; */
 }
-.information-container{
-    position: sticky;
-    top: 0px;
-}
 .cart-container{
     padding-bottom: 40px;
     display: grid;
