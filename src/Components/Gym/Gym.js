@@ -27,12 +27,14 @@ const Gym = () => {
                 saveInfo.push(addedInfo);
             }
         }
+        console.log(saveInfo)
         setInfo(saveInfo);
     },[carts])
 
     const handleToInfo = (selectToInfo) => {
-        const exists = carts.find(product => product.id !== selectToInfo.id)
-        console.log(exists)
+        const exists = carts.find(product => product.id === selectToInfo.id)
+        
+        setCarts(exists.time)
         
         addToDb(selectToInfo.id)
     }
@@ -40,7 +42,7 @@ const Gym = () => {
     return (
         <div className='gym-container'>
             <div className=" bg-blue-50">
-                <h1 className='pt-5 text-[30px] px-14 text-blue-500 font-[650]'>
+                <h1 className='pt-5 text-[30px] px-8 lg:px-14 text-blue-500 font-[650]'>
                     <FontAwesomeIcon className='mr-1' icon={faDumbbell} /> 
                     Fitness-Heroes</h1>
                     <p className='text-[20px] font-semibold mt-1 px-14'>Select today's exercise</p>

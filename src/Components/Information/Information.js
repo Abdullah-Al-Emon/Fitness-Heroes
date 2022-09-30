@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Infromation.css';
+
 
 const Information = ({ info }) => {
     const [second, setSecond] = useState(0)
@@ -21,13 +24,25 @@ const Information = ({ info }) => {
     let time = 0;
     let quantity = 0;
     for (const cart of info) {
-        // console.log(cart)
+    console.log(cart.time)    
         time = time + cart.time;
         quantity = quantity + cart.quantity;
     }
 
+    const notify = () => {
+        toast.success('🦄 Congratulations!', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
+    }
+
     return (
-        <div>
+        <div className='information'>
             <div className='info'>
                 <div className='mr-1'>
                     <img src='/images/pic.jpg' alt="" />
@@ -37,8 +52,8 @@ const Information = ({ info }) => {
                     <p><FontAwesomeIcon className='text-stone-400' icon={faLocationDot}></FontAwesomeIcon> Dhaka, Bangladesh</p>
                 </div>
             </div>
-            <div className='flex bg-blue-50 mx-3 justify-between px-4 py-2 rounded-[15px]'>
-                <div>
+            <div className='flex  bg-blue-50 mx-3 justify-between px-4 py-2 rounded-[15px]'>
+                <div >
                     <p className='text-[20px] font-[600]'>75<small className='font-[400] text-stone-400'>Kg</small></p>
                     <p className='font-[400] text-zinc-500'>Weight</p>
                 </div>
@@ -88,7 +103,8 @@ const Information = ({ info }) => {
                 </div>
             </div>
             <div className="break">
-                <button className='btn-info bg-blue-500 hover:bg-blue-400'>Added to List</button>
+                <ToastContainer></ToastContainer>
+                <button onClick={notify} className='btn-info bg-blue-500 hover:bg-blue-400'>Added to List</button>
             </div>
         </div>
     );
