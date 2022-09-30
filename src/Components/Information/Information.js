@@ -27,7 +27,7 @@ const Information = ({ info }) => {
     }
 
     const notify = () => {
-        toast.success('🦄 Congratulations!', {
+        toast.success('Congratulations!', {
             position: "top-center",
             autoClose: 5000,
             hideProgressBar: false,
