@@ -5,6 +5,7 @@
     "name": "Lat Pulldown Machine",
     "age": "20-25",
     "time": 30,
+    "quantity": 0,
     "img": "https://media.istockphoto.com/photos/work-out-on-pulldown-weight-machine-picture-id1311512621?b=1&k=20&m=1311512621&s=170667a&w=0&h=bPphBYHT1C2rqMLrWUd62-Spw5vQyEMLxHILfMMSmJg="
   },
   {
@@ -13,6 +14,7 @@
     "name": "Kettlebells",
     "age": "20-25",
     "time": 35,
+    "quantity": 0,
     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ52qBU3u5t4OpRlLmFZJtkVlsBScrtmiJ0Tz7aES5-yBxnTYBwj5wV0OldDdUbyQ02_pk&usqp=CAU"
   },
   {
@@ -21,6 +23,7 @@
     "name": "Hip Abduction Machine",
     "age": "20-25",
     "time": 40,
+    "quantity": 0,
     "img": "https://www.greatestphysiques.com/wp-content/uploads/2018/02/Chest-fly-machine.jpg"
   },
   {
@@ -29,6 +32,7 @@
     "name": "Hammer Strength",
     "age": "20-25",
     "time": 45,
+    "quantity": 0,
     "img": "https://prod-everyoneactive-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2020/10/05170414/full-body-gym-workout-cropped.jpg"
   },
   {
@@ -37,6 +41,7 @@
     "name": "Chest Press Machine",
     "age": "20-25",
     "time": 25,
+    "quantity": 0,
     "img": "https://t3.ftcdn.net/jpg/03/29/60/84/360_F_329608479_vP9nFK795X8lWmoTa8DPhMgoewQ7U1lG.jpg"
   },
   {
@@ -45,6 +50,7 @@
     "name": "Dumble",
     "age": "20-25",
     "time": 20,
+    "quantity": 0,
     "img": "https://media.istockphoto.com/photos/dumbbells-and-kettlebells-on-a-floor-bodybuilding-equipment-fitness-picture-id1307360297?b=1&k=20&m=1307360297&s=612x612&w=0&h=1D5xckmKxvk_1sEss0FLAdLgA6Xo8y7iQLYaYq64nTs="
   }
 ]

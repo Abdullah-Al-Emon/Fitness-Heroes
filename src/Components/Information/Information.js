@@ -1,14 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import './Infromation.css';
 
-const Information = ({info}) => {
-    let time = 0;
-    for( const cart of info){
-        time = time + cart.time;
+const Information = ({ info }) => {
+    const [second, setSecond] = useState(0)
+    useEffect(() => {
+        const value = localStorage.getItem('second')
+        const result = JSON.parse(value)
+        const seconds = second + Number(result);
+        setSecond(seconds)
+    }, [])
+    
+    const handleAddToBreak = (id) => {
+        localStorage.setItem('second', id)
+        const value = localStorage.getItem('second')
+        setSecond(value)
     }
-    console.log(time)
+
+    let time = 0;
+    let quantity = 0;
+    for (const cart of info) {
+        // console.log(cart)
+        time = time + cart.time;
+        quantity = quantity + cart.quantity;
+    }
+
     return (
         <div>
             <div className='info'>
@@ -38,16 +55,16 @@ const Information = ({info}) => {
                 <h3 className='font-semibold ml-3 mb-4'>Add A Break</h3>
                 <div className='flex bg-blue-50 mx-3 justify-between px-2 py-2 rounded-[15px]'>
                     <div>
-                        <p className='text-[20px] font-[600] bg-white px-1 py-1 rounded-[20px] mx-2'>10s</p>
+                        <button onClick={() => { handleAddToBreak('10') }} className='text-[20px] font-[600] bg-white px-1 py-1 rounded-[20px] mx-2'>10s</button>
                     </div>
                     <div>
-                        <p className='text-[20px] font-[600] bg-white px-1 py-1 rounded-[20px] mx-2'>20s</p>
+                        <button onClick={() => { handleAddToBreak('20') }} className='text-[20px] font-[600] bg-white px-1 py-1 rounded-[20px] mx-2'>20s</button>
                     </div>
                     <div>
-                        <p className='text-[20px] font-[600] bg-white px-1 py-1 rounded-[20px] mx-2'>30s</p>
+                        <button onClick={() => { handleAddToBreak('30') }} className='text-[20px] font-[600] bg-white px-1 py-1 rounded-[20px] mx-2'>30s</button>
                     </div>
                     <div>
-                        <p className='text-[20px] font-[600] bg-white px-1 py-1 rounded-[20px] mx-2'>40s</p>
+                        <button onClick={() => { handleAddToBreak('40') }} className='text-[20px] font-[600] bg-white px-1 py-1 rounded-[20px] mx-2'>40s</button>
                     </div>
                 </div>
             </div>
@@ -58,7 +75,7 @@ const Information = ({info}) => {
                         <p className='text-[17px] font-[600]'>Exercise time</p>
                     </div>
                     <div>
-                        <p className='font-[400] text-zinc-500'>0s</p>
+                        <p className='font-[400] text-zinc-500'>{time}mm</p>
                     </div>
                 </div>
                 <div className='flex bg-blue-50 mx-3 justify-between px-4 py-2 rounded-[15px]'>
@@ -66,12 +83,12 @@ const Information = ({info}) => {
                         <p className='text-[17px] font-[600]'>Break time</p>
                     </div>
                     <div>
-                        <p className='font-[400] text-zinc-500'>{time}s</p>
+                        <p className='font-[400] text-zinc-500'>{second}s</p>
                     </div>
                 </div>
             </div>
             <div className="break">
-            <button className='btn-info bg-blue-500 hover:bg-blue-400'>Added to List</button>
+                <button className='btn-info bg-blue-500 hover:bg-blue-400'>Added to List</button>
             </div>
         </div>
     );

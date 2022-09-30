@@ -19,29 +19,21 @@ const Gym = () => {
     useEffect(() => {
         const storeInfo = getStoreCart();
         const saveInfo = [];
-        // console.log(storeInfo)
         for(const id in storeInfo){
             const addedInfo = carts.find(cart => cart.id === id)
             if(addedInfo){
+                const quantity = storeInfo[id];
+                addedInfo.quantity = quantity;
                 saveInfo.push(addedInfo);
-                // console.log(addedInfo)
             }
         }
         setInfo(saveInfo);
-        // console.log(saveInfo)
     },[carts])
 
     const handleToInfo = (selectToInfo) => {
-        let newInfo = [];
-        const exists = carts.find(info => info.id === selectToInfo.id);
-        if(!exists){
-            newInfo = [...carts, selectToInfo];
-        }else{
-            const rest = carts.filter(info => info.id !== selectToInfo.id)
-            newInfo = [...rest, exists];
-        }
-        console.log(newInfo)
-        setInfo(newInfo)
+        const exists = carts.find(product => product.id !== selectToInfo.id)
+        console.log(exists)
+        
         addToDb(selectToInfo.id)
     }
 

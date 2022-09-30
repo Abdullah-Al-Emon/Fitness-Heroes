@@ -11,7 +11,7 @@ const Cart = ({cart , handleToInfo}) => {
                 <p className='cart-name'>{name}</p>
                 <p>{body}</p>
                 <p>For Age: <span className='font-semibold'>{age}</span></p>
-                <p>Time required: <span className='font-semibold'>{time}s</span></p>
+                <p>Time required: <span className='font-semibold'>{time}</span></p>
             </div>
             <button onClick={() => {handleToInfo(cart)}} className='btn-cart bg-blue-500 hover:bg-blue-400'>Added to List</button>
         </div>
