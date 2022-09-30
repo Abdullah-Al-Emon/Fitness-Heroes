@@ -22,11 +22,8 @@ const Information = ({ info }) => {
     }
 
     let time = 0;
-    let quantity = 0;
-    for (const cart of info) {
-    console.log(cart.time)    
-        time = time + cart.time;
-        quantity = quantity + cart.quantity;
+    for (const cart of info) {    
+        time = cart.time + time;
     }
 
     const notify = () => {
